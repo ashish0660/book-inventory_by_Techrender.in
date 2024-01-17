@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 // import './styles.css';
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import {Autoplay, Pagination } from "swiper/modules";
 
 function Review() {
   return (
@@ -43,8 +43,9 @@ function Review() {
               spaceBetween: 50,
             },
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
+          autoplay={{ delay: 3000 }}
         >
           <SwiperSlide className="shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border">
             <div className="space-y-6">
@@ -89,7 +90,7 @@ function Review() {
                   rerum!
                 </p>
                 <Avatar img={propic}alt="avatar of Jese" rounded className="w-10 mb-4"/>
-                <h5 className="text-lg font-medium">Ashish k.</h5>
+                <h5 className="text-lg font-medium">Crishtin</h5>
                 <p className="text-base">CEO, ABC Company</p>
               </div>
             </div>

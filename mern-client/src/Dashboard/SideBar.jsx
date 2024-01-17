@@ -24,6 +24,7 @@ function SideBar() {
         href={"http://localhost:5173/"}
         img={user?.photoURL}
         imgAlt="photo"
+        className="rounded-full w-16 h-16"
       >
         <p>{user?.displayName || "Admin"}</p>
       </Sidebar.Logo>
